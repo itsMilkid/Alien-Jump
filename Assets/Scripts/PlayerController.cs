@@ -13,8 +13,10 @@ public class PlayerController : MonoBehaviour {
 	[Header("UI - POWERBAR:")]
 	public Slider powerBar;
 
-	[Header("LayerMaks Platforms")]
+	[Header("LayerMaks Platforms:")]
 	public LayerMask platformLayer;
+	
+	[Header("Groundcheck Raycast Position:")]
 	public Transform leftRay;
 	public Transform rightRay;
 
@@ -114,13 +116,6 @@ public class PlayerController : MonoBehaviour {
 		} else {
 			isGrounded = false;
 		}
-
-		/*if (Physics2D.Raycast (rightRay.position, Vector2.down, 5, platformLayer)) {
-			Debug.Log ("Grounded");
-			isGrounded = true;
-		} else {
-			isGrounded = false;
-		}*/
 	}
 		
 }
