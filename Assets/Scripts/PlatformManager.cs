@@ -32,8 +32,6 @@ public class PlatformManager : MonoBehaviour {
 	}
 
 	private void Update(){
-		//RestackPool ();
-
 		if (lerpCamera == true)
 			LerpCameraPosition ();
 	}
@@ -82,17 +80,5 @@ public class PlatformManager : MonoBehaviour {
 			lerpCamera = false;
 		}
 	}
-
-	/*private void RestackPool(){
-		for (int i = 0; i < activePlatforms.Count; i++) {
-			GameObject platform = activePlatforms [i];
-			if (platform.activeSelf == false) {
-				activePlatforms.Remove (platform);
-				pooledPlatforms.Add (platform);
-			}
-		}
-	}*/
-
-
 
 }
